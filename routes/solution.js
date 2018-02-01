@@ -10,4 +10,11 @@ server.route({
   method: 'GET',
   handler: (request, reply) => reply(`Hello ${request.params.name}`),
 });
+// server.start((error) => {
+//   if (error) {
+//     console.log(error.message);
+//   } else {
+//     console.log('server started at port', server.connection.port);
+//   }
+// });
 module.exports = server;
